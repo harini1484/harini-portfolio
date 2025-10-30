@@ -25,6 +25,17 @@ body {
   justify-content: space-between; 
   height: 70px; 
 }
+/* Prevent the brand text from breaking into multiple lines */
+.brand {
+  white-space: nowrap;  /* keeps "Welcome to My Portfolio" on one line */
+  flex-shrink: 0;       /* prevents shrinking when window resizes */
+}
+
+/* Make sure the nav-menu and button fit well */
+.nav-container { 
+  white-space: nowrap;   /* allows horizontal scroll on very small screens */
+}
+
 .brand { 
   font-weight: 700; 
   font-size: 1.15rem; 
@@ -46,6 +57,27 @@ body {
   padding: 0.25rem 0; 
   transition: color 0.2s; 
 }
+.nav_links a {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav_links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #0078ff;
+  transition: width 0.3s;
+}
+
+.nav_links a:hover::after,
+.nav_links a.active-link::after {
+  width: 100%;
+}
+
 .nav-menu li a.active, .nav-menu li a:hover { 
   color: #4675e8; 
 }
@@ -577,6 +609,7 @@ body {
   font-weight: 700; 
   text-align: center; 
   margin-bottom: 2.5rem; 
+  margin-top: 70px;
 }
 
 .timeline-wrapper {
@@ -672,6 +705,7 @@ body {
   font-weight: 700; 
   color: black; 
   margin-bottom: 3rem; 
+  margin-top: 50px;
 }
 
 .workshop-grid { 
@@ -795,6 +829,8 @@ body {
 
 .contact-section { 
   text-align: center; 
+  margin-top: 120px;
+  margin-bottom: 150px;
 }
 .contact-title { 
   color: black; 
@@ -891,7 +927,8 @@ body.dark-theme .contact-card a,
 body.dark-theme .workshop-date,
 body.dark-theme .internship-company,
 body.dark-theme .internship-period,
-body.dark-theme .footer-name { color: #e1e7ff; }
+body.dark-theme .footer-name,
+body.dark-theme .skills-column h3 { color: #e1e7ff; }
 body.dark-theme .nav-menu li a { color: #e1e7ff; }
 body.dark-theme .nav-menu li a.active,
 body.dark-theme .nav-menu li a:hover { color: #7aaaff; }

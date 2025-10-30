@@ -11,7 +11,7 @@
   <!-- NAVIGATION BAR -->
   <nav class="navbar">
     <div class="container nav-container">
-      <span class="brand">My Portfolio</span>
+      <span class="brand">Welcome to My Portfolio</span>
       <ul class="nav-menu">
         <li class="nav_links active-link"><a href="#home">Home</a></li>
         <li class="nav_links"><a href="#about">About</a></li>
@@ -396,6 +396,35 @@ document.addEventListener('DOMContentLoaded', () => {
   sections.forEach(section => {
     section.classList.add('fade-section'); // initial state
     observer.observe(section);
+  });
+});
+</script>
+<script>
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav_links a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 90;
+    const sectionHeight = section.offsetHeight;
+
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  // ✅ Fix for last section ("Contact")
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 2) {
+    current = sections[sections.length - 1].getAttribute("id");
+  }
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active-link");
+    if (link.getAttribute("href").includes(current)) {
+      link.classList.add("active-link");
+    }
   });
 });
 </script>
