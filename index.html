@@ -1,270 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harini Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- NAVIGATION BAR -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <span class="brand">Welcome to My Portfolio</span>
-      <ul class="nav-menu">
-        <li class="nav_links active-link"><a href="#home">Home</a></li>
-        <li class="nav_links"><a href="#about">About</a></li>
-        <li class="nav_links"><a href="#education">Education</a></li>
-        <li class="nav_links"><a href="#skills">Skills</a></li>
-        <li class="nav_links"><a href="#projects">Projects</a></li>
-        <li class="nav_links"><a href="#internship">Internship</a></li>
-        <li class="nav_links"><a href="#certifications">Certification</a></li>
-        <li class="nav_links"><a href="#workshops">Workshop & Achievements</a></li>
-        <li class="nav_links"><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="nav-circlebtn" aria-label="Theme Toggle"><i class="fa-solid fa-moon"></i></button>
-    </div>
-  </nav>
-
-  <!-- HOME SECTION -->
-  <section id="home" class="home-section section">
-    <div class="container home-flex">
-      <div class="home-text">
-        <h2>Hi,</h2>
-        <h2>I'm <span class="main-accent">Harini S</span></h2>
-        <h3>Full Stack Developer</h3>
-        <a href="resume.pdf" class="btn-resume" download><i class="fa-solid fa-download"></i> Resume</a>
-        <div class="social-row">
-          <a href="https://www.linkedin.com/in/harini-s-bb6762294" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:harini140804@gmail.com"><i class="fas fa-envelope"></i></a>
-          <a href="https://github.com/harini1484" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <div class="home-image">
-        <img src="Images/profile.jpg" alt="Harini S" />
+ <nav class="navbar">
+  <div class="container nav-container">
+    <span class="brand">Welcome to My Portfolio</span>
+    <ul class="nav-menu">
+      <li class="nav_links active-link"><a href="#home">Home</a></li>
+      <li class="nav_links"><a href="#about">About</a></li>
+      <li class="nav_links"><a href="#education">Education</a></li>
+      <li class="nav_links"><a href="#skills">Skills</a></li>
+      <li class="nav_links"><a href="#projects">Projects</a></li>
+      <li class="nav_links"><a href="#internship">Internships</a></li>
+      <li class="nav_links"><a href="#certifications">Certifications</a></li>
+      <li class="nav_links"><a href="#workshops">Workshop & Achievements</a></li>
+      <li class="nav_links"><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-circlebtn">
+      <img src="Images/moon.png" alt="Moon" class="theme-icon">
+    </button>
+  </div> 
+</nav>
+<section id="home" class="home-section section">
+  <div class="container home-flex">
+    <div class="home-text">
+      <h2>Hi👋</h2>
+      <h2>I'm <span class="main-accent">Harini</span></h2>
+      <h3>Full Stack Developer💻</h3>
+      <a href="Images/resume.pdf" class="resume-btn">Resume</a>
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/harini-s-bb6762294"><img src="Images/linkedin.png" alt="LinkedIn"></a>
+        <a href="mailto:harini140804@gmail.com"><img src="Images/gmail.png" alt="Email"></a>
+        <a href="https://github.com/harini1484"><img src="Images/github.png" alt="GitHub"></a>
       </div>
     </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <section id="about" class="about-section section active-link">
-    <div class="container about-flex">
-      <div class="about-img">
-        <img src="Images/profile.jpg" alt="Harini S Profile Photo" />
-      </div>
-      <div class="about-content">
-        <h2 class="about-title">About Me</h2>
-        <h3 class="about-name">I'm Harini S</h3>
-        <p class="about-desc">
-          I'm a passionate and motivated IT fresher with a strong foundation in software development. I enjoy building things for the web and I'm always eager to learn new technologies.<br><br>
-          My goal is to leverage my skills to create innovative and efficient solutions for real-world problems. I'm a proactive learner and a team player, always ready for a new challenge.
-        </p>
-        <div class="about-cards">
-          <div class="about-card card-hover">
-            <i class="fa-solid fa-user-graduate card-icon"></i>
-            <span class="card-title">Experience</span><br>
-            <span class="card-text">Fresher</span>
-          </div>
-          <div class="about-card card-hover">
-            <i class="fa-solid fa-folder-open card-icon"></i>
-            <span class="card-title">Completed</span><br>
-            <span class="card-text">3+ Projects</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION SECTION -->
-  <section id="education" class="education-section section">
-    <div class="container">
-      <h2 class="education-title">Education</h2>
-      <div class="education-cards">
-        <article class="edu-card card-hover">
-          <div class="edu-icon"><i class="fa-solid fa-building-columns"></i></div>
-          <div class="edu-details">
-            <h3>B.Sc. Computer Science</h3>
-            <p class="edu-institution">Annai Violet Arts and Science College, University of Madras</p>
-            <p class="edu-duration">Aug 2022 – May 2025</p>
-            <p class="edu-percentage">Percentage: 81.3%</p>
-          </div>
-        </article>
-        <article class="edu-card card-hover">
-          <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
-          <div class="edu-details">
-            <h3>Higher Secondary</h3>
-            <p class="edu-institution">G K Shetty Vivekananda Vidyalaya Senior Secondary School (CBSE)</p>
-            <p class="edu-duration">Apr 2021 – July 2022</p>
-            <p class="edu-percentage">Percentage: 77%</p>
-          </div>
-        </article>
-        <article class="edu-card card-hover">
-          <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
-          <div class="edu-details">
-            <h3>Secondary</h3>
-            <p class="edu-institution">G K Shetty Vivekananda Vidyalaya Senior Secondary School (CBSE)</p>
-            <p class="edu-duration">Apr 2019 – July 2020</p>
-            <p class="edu-percentage">Percentage: 70%</p>
-          </div>
-        </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="skills-section section">
-    <div class="container">
-      <h2 class="skills-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skills-column">
-          <h3>Frontend</h3>
-          <div class="skills-list">
-            <span class="skill-item"><i class="fa-brands fa-html5"></i> HTML</span>
-            <span class="skill-item"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-            <span class="skill-item"><i class="fa-brands fa-js"></i> JavaScript</span>
-            <span class="skill-item"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
-            <span class="skill-item"><i class="fa-brands fa-react"></i> React.js</span>
-          </div>
-        </div>
-        <div class="skills-column">
-          <h3>Backend</h3>
-          <div class="skills-list">
-            <span class="skill-item"><i class="fa-brands fa-python"></i> Python</span>
-            <span class="skill-item"><i class="fa-solid fa-database"></i> SQL</span>
-          </div>
-        </div>
-        <div class="skills-column">
-          <h3>Others</h3>
-          <div class="skills-list">
-            <span class="skill-item"><i class="fa-brands fa-github"></i> GitHub</span>
-            <span class="skill-item"><i class="fa-solid fa-table"></i> Power BI</span>
-            <span class="skill-item"><i class="fa-solid fa-chart-column"></i> Tableau</span>
-            <span class="skill-item"><i class="fa-solid fa-file-word"></i> MS Office</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="projects-section section">
-    <div class="container">
-      <h2 class="projects-title">Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card card-hover">
-          <img src="images/busbuzz.jpg" alt="BusBuzz Project Screenshot" class="project-img" />
-          <div class="project-body">
-            <h3>BusBuzz – Bus Stop Alert System</h3>
-            <p class="project-desc">Developed a system to notify passengers when their bus stop is approaching.</p>
-            <div class="project-tags">
-              <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>PHP</span> <span>MySQL</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://github.com/harini1484/bus_route_finder.git" class="btn-project" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-              <a href="http://localhost/bus_route_finder/" class="btn-project" target="_blank"><i class="fa-solid fa-desktop"></i> Demo</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card card-hover">
-          <img src="images/internship_project.jpg" alt="AI-Powered Machine Learning Project" class="project-img" />
-          <div class="project-body">
-            <h3>Crop Water Requirement Prediction</h3>
-            <p class="project-desc">A Machine Learning Project that predicts crop water requirements to help plan efficient irrigation.</p>
-            <div class="project-tags">
-              <span>Python</span> <span>Scikit-learn</span> <span>Pandas</span> <span>NumPy</span> <span>Matplotlib</span><span>Streamlit</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://github.com/harini1484/Crop-Water-Requirement-Prediction-ML.git" class="btn-project" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-              <a href="https://crop-water-requirement-prediction-ml.streamlit.app/" class="btn-project" target="_blank"><i class="fa-solid fa-desktop"></i> Demo</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card card-hover">
-          <img src="images/portfolio.jpg" alt="Personal Portfolio Website Screenshot" class="project-img" />
-          <div class="project-body">
-            <h3>Personal Portfolio Website</h3>
-            <p class="project-desc">A responsive portfolio website with dark mode and accessible UI.</p>
-            <div class="project-tags">
-              <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
-            </div>
-            <div class="project-actions">
-              <a href="#" class="btn-project" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-              <a href="#" class="btn-project" target="_blank"><i class="fa-solid fa-desktop"></i> Demo</a>
-            </div>
-          </div></div>
-          <div class="project-card card-hover">
-  <img src="images/lecture-voice-notes.jpg" alt="AI Lecture Voice-to-Notes Generator Project Screenshot" class="project-img" />
-  <div class="project-body">
-    <h3>AI Lecture Voice-to-Notes Generator</h3>
-    <p class="project-desc">An AI-powered application that converts recorded lecture audio into summarized study notes using speech-to-text and text summarization techniques.</p>
-    <div class="project-tags">
-      <span>Python</span><span>Streamlit</span><span>OpenAI API</span> 
-    </div>
-    <div class="project-actions">
-      <a href="https://github.com/harini1484/Lecture-Voice-to-Notes-Generator" class="btn-project" target="_blank">
-        <i class="fa-brands fa-github"></i> Code
-      </a>
-      <a href="https://ai-lecture-voice-to-notes-generator.streamlit.app/" class="btn-project" target="_blank">
-        <i class="fa-solid fa-desktop"></i> Demo
-      </a>
-    
+    <div class="home-image"><img src="Images/profile.png" alt="Harini S" /></div>
   </div>
-</div>
-
+</section>
+<section id="about" class="about-section section">
+  <div class="container about-flex">
+    <div class="about-img"><img src="Images/profile.png" alt="Harini S Profile Photo" /></div>
+    <div class="about-content">
+      <h2 class="about-title">About Me</h2>
+      <h3 class="about-name">I'm Harini S </h3>
+      <p class="about-desc">
+        I'm a motivated fresher with a strong interest in web development and technology.<br>
+        I enjoy creating clean, user-friendly websites and learning new tools that help me improve my skills.<br>
+        I’m always curious, excited to explore new ideas, and committed to growing as a developer.</p>
+      <div class="about-cards">
+        <div class="about-card card-hover">
+          <img src="Images/person.png" class="about-icon" alt="Experience Icon"><span class="card-title">Experience</span><br>
+          <span class="card-text">Fresher</span>
+        </div>
+        <div class="about-card card-hover"><img src="Images/task-management.png" class="about-icon" alt="Projects Icon">
+          <span class="card-title">Completed</span><br>
+          <span class="card-text">3+ Projects</span>
         </div>
       </div>
     </div>
-  </section>
-  
-
-  <!-- INTERNSHIP SECTION -->
-  <section id="internship" class="internship-section section">
-    <div class="container">
-      <h2 class="internship-title">Internship</h2>
-      <div class="internship-card card-hover">
-        <div class="internship-icon"><i class="fa-solid fa-briefcase"></i></div>
-        <div class="internship-content">
-          <h3>AI-Powered Machine Learning Internship</h3>
-          <span class="internship-company">Inspire Softech Solutions (Online)</span>
-          <span class="internship-period">June 2024 - 2 Weeks</span>
-          <ul class="internship-details">
-            <li>Worked on data preprocessing, feature engineering, and building a baseline ML model.</li>
-            <li>Created visualizations for model results and assisted in deployment demos.</li>
-          </ul>
-          <p><strong>Skills used:</strong> Python, Data Analysis, Scikit-learn, Model Evaluation</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-<!-- CERTIFICATIONS SECTION -->
-<section id="certifications" class="certifications-timeline section">
+  </div>
+</section>
+  <section id="education" class="education-section section">
   <div class="container">
-    <h2 class="timeline-title">Certifications & Training</h2>
+    <h2 class="education-title">Education</h2>
+    <div class="education-cards">
+      <div class="edu-card card-hover">
+        <div class="edu-details"><img src="Images/graduation.png" class="edu-icon" alt="Graduation Icon">
+          <h3>B.Sc. Computer Science</h3>
+          <p class="edu-institution">Annai Violet Arts and Science College, University of Madras</p>
+          <p class="edu-duration">Aug 2022 – May 2025</p>
+          <p class="edu-percentage">Percentage: 81.3%</p>
+        </div>
+      </div>
+      <div class="edu-card card-hover">
+        <div class="edu-details"><img src="Images/school.png" class="edu-icon" alt="School Icon">
+          <h3>Higher Secondary</h3>
+          <p class="edu-institution">G K Shetty Vivekananda Vidyalaya Senior Secondary School (CBSE)</p>
+          <p class="edu-duration">Apr 2021 – July 2022</p>
+          <p class="edu-percentage">Percentage: 77%</p>
+        </div>
+      </div>
+      <div class="edu-card card-hover">
+        <div class="edu-details"><img src="Images/school.png" class="edu-icon" alt="School Icon">
+          <h3>Secondary</h3>
+          <p class="edu-institution">G K Shetty Vivekananda Vidyalaya Senior Secondary School (CBSE)</p>
+          <p class="edu-duration">Apr 2019 – July 2020</p>
+          <p class="edu-percentage">Percentage: 70%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="skills" class="skills-section section">
+  <div class="container">
+    <h2 class="skills-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skills-column"><h3>Frontend</h3>
+        <div class="skills-list">
+          <div class="skill-item"><img src="Images/html.png" alt="HTML">HTML5</div>
+          <div class="skill-item"><img src="Images/css-3.png" alt="CSS">CSS3</div>
+          <div class="skill-item"><img src="Images/bootstrap.png" alt="Bootstrap">Bootstrap</div>
+          <div class="skill-item"><img src="Images/java-script.png" alt="JavaScript">JavaScript</div>
+          <div class="skill-item"><img src="Images/programing.png" alt="React">React JS</div>
+        </div>
+      </div>
+      <div class="skills-column"><h3>Backend</h3>
+        <div class="skills-list">
+          <div class="skill-item"><img src="Images/node-js.png" alt="Node.js">Node.js</div>
+          <div class="skill-item"><img src="Images/express-js.png" alt="Express.js">Express.js</div>
+          <div class="skill-item"><img src="Images/php.png" alt="PHP">PHP (Basics)</div>
+          <div class="skill-item"><img src="Images/mysql.png" alt="MySQL">MySQL</div>
+        </div>
+      </div>
+      <div class="skills-column"><h3>Others / Tools</h3>
+        <div class="skills-list">
+          <div class="skill-item"><img src="Images/python.png" alt="Python">Python</div>
+          <div class="skill-item"><img src="Images/excel.png" alt="Excel">Excel</div>
+          <div class="skill-item"><img src="Images/powerbi.png" alt="Power BI">Power BI</div>
+          <div class="skill-item"><img src="Images/googlecolab.png" alt="Colab">Google Colab</div>
+          <div class="skill-item"><img src="Images/github.png" alt="GitHub">GitHub</div>
+          <div class="skill-item"><img src="Images/vscode.png" alt="VS Code">VS Code</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="projects" class="projects-section section">
+  <div class="container"><h2 class="projects-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card card-hover"><img src="Images/busbuzz.jpg" alt="BusBuzz Project Screenshot" class="project-img"/>
+        <div class="project-body"><h3>BusBuzz – Bus Stop Alert System</h3>
+          <p class="project-desc">Developed a system to notify passengers when their bus stop is approaching.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span></div>
+          <div class="project-actions">
+            <a href="https://github.com/harini1484/bus_route_finder.git" class="btn-project">Code</a>
+            <a href="http://localhost/bus_route_finder/" class="btn-project">Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card card-hover">
+        <img src="Images/internship_project.jpg" alt="AI-Powered Machine Learning Project" class="project-img"/>
+        <div class="project-body"><h3>Crop Water Requirement Prediction</h3>
+          <p class="project-desc">A Machine Learning Project that predicts crop water requirements to help plan efficient irrigation.</p>
+          <div class="project-tags"><span>Python</span><span>Streamlit</span><span>Regression</span></div>
+            <div class="project-actions">
+              <a href="https://github.com/harini1484/Crop-Water-Requirement-Prediction-ML.git" class="btn-project">Code</a>
+              <a href="https://crop-water-requirement-prediction-ml.streamlit.app/" class="btn-project">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card card-hover"><img src="Images/portfolio.jpg" alt="Portfolio Website Screenshot" class="project-img"/>
+          <div class="project-body"><h3>Personal Portfolio Website</h3>
+            <p class="project-desc">A responsive portfolio website with dark mode and accessible UI.</p>
+            <div class="project-tags"><span>HTML</span> <span>CSS</span> <span>JavaScript</span></div>
+            <div class="project-actions">
+              <a href="#" class="btn-project">Code</a>
+              <a href="#" class="btn-project">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card card-hover">
+          <img src="Images/lecture-voice-notes.jpg" alt="AI Lecture  Screenshot" class="project-img"/>
+          <div class="project-body">
+            <h3>AI Lecture Voice-to-Notes Generator</h3>
+            <p class="project-desc">An AI-powered application that converts recorded lecture audio into summarized study notes using speech-to-text and text summarization techniques.</p>
+            <div class="project-tags"><span>Python</span><span>Streamlit</span><span>OpenAI API</span> </div>
+            <div class="project-actions">
+              <a href="https://github.com/harini1484/Lecture-Voice-to-Notes-Generator" class="btn-project">Code</a>
+              <a href="https://ai-lecture-voice-to-notes-generator.streamlit.app/" class="btn-project">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="internship" class="internship-section section">
+    <div class="container"><h2 class="internship-title">Internships</h2>
+      <div class="internship-row">
+        <div class="internship-card card-hover"><img src="Images/internship.png" class="internship-icon" alt="Internship Icon">
+          <div class="internship-content">
+            <h3>AI - Powered Machine Learning</h3><span class="internship-company">Inspire Softech Solutions (Online)</span>
+            <span class="internship-period">June 2024 – 2 Weeks</span>
+            <ul class="internship-details">
+              <li>Gained hands-on experience in AI/ML applications and real-time data handling.</li>
+              <li>Worked on supervised learning, data preprocessing, and model building.</li>
+            </ul>
+            <p><strong>Skills used:</strong> Python, Machine Learning, Data Analysis</p>
+          </div>
+        </div>
+        <div class="internship-card card-hover"><img src="Images/internship.png" class="internship-icon" alt="Internship Icon">
+          <div class="internship-content">
+          <h3>AI & Cloud Technologies</h3>
+          <span class="internship-company">AICTE – Edunet Foundation (Online)</span>
+          <span class="internship-period">Sept 2025 - 4 Weeks</span>
+          <ul class="internship-details">
+            <li>Worked on AI, Cloud Computing, and automation technologies.</li>
+            <li>Built the “AI Lecture Voice-to-Notes Generator” using speech-to-text and summarization.</li>
+          </ul>
+          <p><strong>Skills used:</strong> Python, Streamlit, AI/ML Concepts</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="certifications" class="certifications-timeline section">
+  <div class="container"><h2 class="timeline-title">Certifications & Training</h2>
     <div class="timeline-wrapper">
       <div class="timeline-item card-hover">
+        <img src="Images/certificate.png" alt="Certificate" class="cert-icon">
         <span class="duration-label">Aug – Nov 2025</span>
-        <div class="timeline-icon"><i class="fa-solid fa-award"></i></div>
         <div class="timeline-content">
           <h3 class="cert-name">Full Stack Development</h3>
           <p class="cert-issuer">Greens Technologies Global Pvt. Ltd.</p>
-          <span class="cert-badge badge-highlighted">-Current-</span><br>
         </div>
       </div>
-      <div class="timeline-item">
+      <div class="timeline-item card-hover"><img src="Images/certificate.png" alt="Certificate" class="cert-icon">
         <span class="duration-label">May 2022 – May 2023</span>
-        <div class="timeline-icon"><i class="fa-solid fa-award"></i></div>
         <div class="timeline-content">
           <h3 class="cert-name">Honours Diploma in Computer Application</h3>
-          <p class="cert-issuer"> CSC Computer Education</p>
-          <span class="cert-grade badge-secondary">Grade: 'A'</span><br>
+          <p class="cert-issuer">CSC Computer Education</p>
         </div>
       </div>
-      <div class="timeline-item">
+      <div class="timeline-item card-hover"><img src="Images/certificate.png" alt="Certificate" class="cert-icon">
         <span class="duration-label">July 2023</span>
-        <div class="timeline-icon"><i class="fa-solid fa-award"></i></div>
         <div class="timeline-content">
           <h3 class="cert-name">HTML fundamentals and Cascading StyleSheet</h3>
           <p class="cert-issuer">Annai Violet Arts & Science College</p>
@@ -273,167 +236,44 @@
     </div>
   </div>
 </section>
-
-
-  <!-- WORKSHOPS SECTION -->
-  <section id="workshops" class="workshop-cards section">
-    <div class="container">
-      <h2 class="workshop-section-title">Workshops & Achievements</h2>
-      <div class="workshop-grid">
-        <div class="workshop-card accent-blue card-hover">
-          <div class="workshop-card-header">
-            <span class="workshop-badge">Workshop</span>
-            <i class="fa-solid fa-brain"></i>
-          </div>
-          <div class="workshop-card-body">
-            <h3>Advanced AI Tools</h3>
-            <p>National Level Workshop at Loyola College, Chennai.</p>
-          </div>
-          <div class="workshop-card-footer">
-            <span class="workshop-date">Aug 2024</span>
-          </div>
+<section id="workshops" class="workshop-cards section">
+  <div class="container">
+    <h2 class="workshop-section-title">Workshops & Achievements</h2>
+    <div class="workshop-grid">
+      <div class="workshop-card card-hover">
+        <img src="Images/workshop.png" class="workshop-icon" alt="Workshop Icon">
+        <div class="workshop-card-header"><span class="workshop-badge">Workshop</span></div>
+        <div class="workshop-card-body">
+          <h3>Advanced AI Tools</h3>
+          <p>National Level Workshop at Loyola College, Chennai.</p>
         </div>
-        <div class="workshop-card accent-green card-hover">
-          <div class="workshop-card-header">
-            <span class="workshop-badge">Edu Visit</span>
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <div class="workshop-card-body">
-            <h3>Project Udaan</h3>
-            <p>Educational Visit to Adani Facilities, Katupalli.</p>
-          </div>
-          <div class="workshop-card-footer">
-            <span class="workshop-date">Feb 2025</span>
-          </div>
-        </div>
-        <div class="workshop-card accent-gold card-hover">
-          <div class="workshop-card-header">
-            <span class="workshop-badge">Achievement</span>
-            <i class="fa-solid fa-trophy"></i>
-          </div>
-          <div class="workshop-card-body">
-            <h3>Proficiency Certificate</h3>
-            <p>Meritorious Academic Performance, Annai Violet Arts & Science College.</p>
-          </div>
-          <div class="workshop-card-footer">
-            <span class="workshop-date">2024–25</span>
-          </div>
-        </div>
+        <div class="workshop-card-footer"><span class="workshop-date">Aug 2024</span></div>
+      </div>
+      <div class="workshop-card card-hover"><img src="Images/workshop.png" class="workshop-icon" alt="Workshop Icon">
+        <div class="workshop-card-header"><span class="workshop-badge">Edu Visit</span></div>
+        <div class="workshop-card-body"><h3>Project Udaan</h3><p>Educational Visit to Adani Facilities, Katupalli.</p></div>
+        <div class="workshop-card-footer"><span class="workshop-date">Feb 2025</span></div>
+      </div>
+      <div class="workshop-card card-hover"><img src="Images/workshop.png" class="workshop-icon" alt="Workshop Icon">
+        <div class="workshop-card-header"><span class="workshop-badge">Achievement</span></div>
+        <div class="workshop-card-body"><h3>Proficiency Certificate</h3><p>Meritorious Academic Performance, Annai Violet Arts & Science College.</p></div>
+        <div class="workshop-card-footer"><span class="workshop-date">2024–25</span></div>
       </div>
     </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="contact-section section">
-    <div class="container contact-container">
-      <h2 class="contact-title">Contact</h2>
-      
-      <div class="contact-info-cards">
-        
-        <div class="contact-card card-hover">
-          <i class="fab fa-linkedin"></i>
-          <a href="https://www.linkedin.com/in/harini-s-bb6762294" target="_blank">LinkedIn</a>
-        </div>
-        <div class="contact-card card-hover">
-          <i class="fa-solid fa-envelope"></i>
-          <a href="mailto:harini140804@gmail.com">Email-ID</a>
-        </div>
-        <div class="contact-card card-hover">
-          <i class="fab fa-github"></i>
-          <a href="https://github.com/harini1484" target="_blank">GitHub</a>
-        </div>
-      </div>
+  </div>
+</section>
+<section id="contact" class="contact-section section">
+  <div class="container contact-container">
+    <h2 class="contact-title">Contact</h2>
+    <form action="https://formsubmit.co/harini140804@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="message" placeholder="Your Message" required></textarea><br>
+      <button class="submit" type="submit">Send</button>
+    </form>
     </div>
-  </section>
-
-  <!-- FOOTER -->
- <footer class="site-footer">
-  <div class="footer-name">© 2025 Harini S. All rights reserved.</div>
-</footer>
-
-
-  <!-- LIGHT/DARK MODE TOGGLE SCRIPT -->
-  <script>
-    const themeBtn = document.querySelector('.nav-circlebtn');
-    function setTheme(dark) {
-      if (dark) {
-        document.body.classList.add('dark-theme');
-        themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
-        themeBtn.setAttribute('aria-label', 'Switch to light mode');
-      } else {
-        document.body.classList.remove('dark-theme');
-        themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
-        themeBtn.setAttribute('aria-label', 'Switch to dark mode');
-      }
-      localStorage.setItem('portfolio-theme', dark ? 'dark' : 'light');
-    }
-    themeBtn.addEventListener('click', () => {
-      setTheme(!document.body.classList.contains('dark-theme'));
-    });
-    if (localStorage.getItem('portfolio-theme') === 'dark') setTheme(true);
-  </script>
-  
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('section');
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible', 'fade-section');
-        } else {
-          entry.target.classList.remove('visible');
-        }
-      });
-    },
-    {
-      threshold: 0.25 // trigger when 25% of section is visible
-    }
-  );
-
-  sections.forEach(section => {
-    section.classList.add('fade-section'); // initial state
-    observer.observe(section);
-  });
-});
-</script>
-<script>
-const sections = document.querySelectorAll("section[id]");
-const navLinks = document.querySelectorAll(".nav_links a");
-
-window.addEventListener("scroll", () => {
-  let current = "";
-
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 90;
-    const sectionHeight = section.offsetHeight;
-
-    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  // ✅ Fix for last section ("Contact")
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 2) {
-    current = sections[sections.length - 1].getAttribute("id");
-  }
-
-  navLinks.forEach((link) => {
-    link.classList.remove("active-link");
-    if (link.getAttribute("href").includes(current)) {
-      link.classList.add("active-link");
-    }
-  });
-});
-</script>
-
-
-
-
-
-
-  
+</section>
+<footer class="site-footer"><div class="footer-name">© 2025 Harini S. All rights reserved.</div></footer>
+<script src="script.js"></script>
 </body>
 </html>
